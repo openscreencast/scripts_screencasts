@@ -2,19 +2,18 @@
 <html lang="de">
 	<head>
 		<meta charset="utf-8">
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
-	<script>
-	$(document).ready(function() {
-   
-    $.getJSON("http://gdata.youtube.com/feeds/api/videos/7Wv_UddMCjk?v=2&alt=jsonc", function(response){
-        document.write(response.data.items[0].title);
-		document.write("Hello");
-	});
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script>
+		$(document).ready(function() {
+	
+        	$.getJSON("http://gdata.youtube.com/feeds/api/videos/7Wv_UddMCjk?v=2&alt=jsonc", function(jd) {
+        	document.write(jd.data.title);
+	
+			});
 
-	});
-	document.write("Hello");
-	</script>
-
+		});
+	
+		</script>
 	</head>
 
 	<body>
